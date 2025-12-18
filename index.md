@@ -12,7 +12,8 @@ Trip Up captures **repeatable human mistakes** so others don’t have to make th
 ---
 
 ## Featured Trip Ups
-
 {% for post in site.posts limit:5 %}
-- [{{ post.title }}]({{ post.url | relative_url }})
+- [{{ post.title }}]({{ post.url | relative_url }}) — {{ post.date | date: "%d %b %Y" }}
 {% endfor %}
+
+
