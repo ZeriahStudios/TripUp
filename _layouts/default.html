@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ "/assets/css/site.css" | relative_url }}">
+</head>
+<body>
+  <header class="site">
+    <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+    <p>{{ site.description }}</p>
+  </header>
+
+  <main class="content">
+    {{ content }}
+  </main>
+
+  <footer class="site">
+    <p>© {{ site.time | date: "%Y" }} Trip Up</p>
+  </footer>
+</body>
+</html>

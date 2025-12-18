@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article class="tripup">
+  <h2>{{ page.title }}</h2>
+
+  <section>
+    <h3>Where it happened</h3>
+    <p>{{ page.where }}</p>
+  </section>
+
+  <section>
+    <h3>What went wrong</h3>
+    {{ content }}
+  </section>
+
+  <section>
+    <h3>Why it happens</h3>
+    <p>{{ page.why }}</p>
+  </section>
+
+  <section>
+    <h3>What to do instead</h3>
+    <p>{{ page.fix }}</p>
+  </section>
+
+  <section class="takeaway">
+    <strong>One-line takeaway:</strong>
+    <p>{{ page.takeaway }}</p>
+  </section>
+</article>

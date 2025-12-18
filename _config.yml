@@ -1,0 +1,4 @@
+title: Trip Up
+description: Mistakes repeat across people, not destinations.
+markdown: kramdown
+permalink: /:categories/:title/
