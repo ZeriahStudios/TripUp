@@ -4,20 +4,34 @@
   <meta charset="utf-8">
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
   <link rel="stylesheet" href="{{ "/assets/css/site.css" | relative_url }}">
 </head>
 <body>
-  <header class="site">
-    <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
-    <p>{{ site.description }}</p>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">
+        <a class="brand-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+        <span class="brand-tagline">{{ site.description }}</span>
+      </div>
+
+      <nav class="nav">
+        <a href="{{ "/" | relative_url }}">Home</a>
+        <a href="{{ "/about/" | relative_url }}">About</a>
+        <a class="btn" href="{{ "/submit/" | relative_url }}">Submit</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="content">
+  <main class="wrap">
     {{ content }}
   </main>
 
-  <footer class="site">
-    <p>© {{ site.time | date: "%Y" }} Trip Up</p>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>© {{ site.time | date: "%Y" }} Trip Up</div>
+      <div class="muted">A Zeriah Studios project.</div>
+    </div>
   </footer>
 </body>
 </html>
