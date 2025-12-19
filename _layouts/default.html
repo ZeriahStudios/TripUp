@@ -34,7 +34,18 @@
     </div>
   </footer>
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script>
+  function turnstileOk() {
+    const btn = document.querySelector('form button[type="submit"]');
+    if (btn) btn.disabled = false;
+  }
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.querySelector('form button[type="submit"]');
+    if (btn) btn.disabled = true;
+  });
+</script>
 
 </body>
 </html>
+
 
