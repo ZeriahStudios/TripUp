@@ -54,7 +54,7 @@ Share a mistake so others don’t have to repeat it.
   <br><br>
 
   <!-- Cloudflare Turnstile -->
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  
   <div class="cf-turnstile"
        data-sitekey="0x4AAAAAAACHiPu1MME-cPS60"></div>
 
