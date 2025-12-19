@@ -241,3 +241,56 @@ form button{
 
 form button:hover{ filter:brightness(1.05); }
 
+
+
+/* --- Shimmer hover (cards + buttons) --- */
+.card, .nav .btn, form button {
+  position: relative;
+  overflow: hidden;
+  transition: transform .15s ease, border-color .15s ease, filter .15s ease;
+}
+
+.card::after, .nav .btn::after, form button::after{
+  content:"";
+  position:absolute;
+  inset:-40% -60%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255,255,255,.08) 30%,
+    rgba(255,255,255,.18) 45%,
+    rgba(255,255,255,.08) 60%,
+    transparent 100%
+  );
+  transform: translateX(-60%) rotate(8deg);
+  opacity: 0;
+  transition: opacity .15s ease;
+  pointer-events:none;
+}
+
+.card:hover::after,
+.nav .btn:hover::after,
+form button:hover::after{
+  opacity: 1;
+  animation: shimmer 0.9s ease forwards;
+}
+
+@keyframes shimmer{
+  to { transform: translateX(60%) rotate(8deg); }
+}
+
+/* Make the submit button feel "primary" */
+form button{
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(125,211,252,.28);
+  background: linear-gradient(135deg, rgba(125,211,252,.22), rgba(167,139,250,.16));
+  color: var(--text);
+  cursor: pointer;
+  box-shadow: 0 14px 40px rgba(0,0,0,.28);
+}
+
+form button:hover{
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+}
