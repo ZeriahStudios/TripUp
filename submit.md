@@ -56,7 +56,9 @@ Share a mistake so others don’t have to repeat it.
   <!-- Cloudflare Turnstile -->
   
   <div class="cf-turnstile"
-       data-sitekey="0x4AAAAAACHlNYb2XdMxSePD"></div>
+     data-sitekey="0x4AAAAAACHlNYb2XdMxSePD"
+     data-callback="turnstileOk"></div>
+
 
   <br><br>
 
