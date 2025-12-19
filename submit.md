@@ -6,10 +6,64 @@ permalink: /submit/
 
 ## Submit a Trip Up
 
-Trip Up submissions will open soon.
+Share a mistake so others don’t have to repeat it.
 
-For now:
-- Draft your Trip Up using the same format as existing posts
-- Or open a GitHub Issue on the Trip Up repo
+<form action="/submit" method="POST">
 
-We’ll enable submissions once the format is locked.
+  <label>
+    Area
+    <select name="area" required>
+      <option value="Travel">Travel</option>
+      <option value="Parenting">Parenting</option>
+      <option value="Work">Work</option>
+      <option value="Life">Life</option>
+      <option value="Other">Other</option>
+    </select>
+  </label>
+
+  <br><br>
+
+  <label>
+    Category
+    <input type="text" name="category" placeholder="e.g. Assumption, Oversight" required>
+  </label>
+
+  <br><br>
+
+  <label>
+    Contributor (optional)
+    <input type="text" name="contributor" placeholder="Anonymous">
+  </label>
+
+  <br><br>
+
+  <label>
+    What happened?
+    <textarea name="content" rows="6" required
+      placeholder="Describe the mistake clearly (at least 20 characters)"></textarea>
+  </label>
+
+  <br><br>
+
+  <label>
+    Reflection (optional)
+    <textarea name="reflection" rows="4"
+      placeholder="What would you do differently next time?"></textarea>
+  </label>
+
+  <br><br>
+
+  <!-- Cloudflare Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <div class="cf-turnstile"
+       data-sitekey="0x4AAAAAAACHiPu1MME-cPS60"></div>
+
+  <br><br>
+
+  <button type="submit">Submit Trip Up</button>
+
+</form>
+
+<p style="opacity:0.7; margin-top:1em;">
+Submissions are reviewed before appearing publicly.
+</p>
