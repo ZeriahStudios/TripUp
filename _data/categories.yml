@@ -1,17 +1,29 @@
-- tag: Travel
-  title: Travel
+- title: Travel
   desc: Airports, hotels, itineraries, “oops I forgot…”
-  badge: Trip
+  badge: Travel
   href: /tags/travel/
 
-- tag: Parenting
-  title: Parenting
-  desc: Kid chaos, routines, “why didn’t anyone tell me?”
+- title: Parenting
+  desc: Kids, routines, sleep… and chaos management.
   badge: Family
   href: /tags/parenting/
 
-- tag: Work
-  title: Work
-  desc: Office pitfalls, process misses, comms mistakes.
-  badge: Office
+- title: Work
+  desc: Process misses, comms mistakes, office pitfalls.
+  badge: Work
   href: /tags/work/
+
+- title: Life
+  desc: Daily-life mistakes worth not repeating.
+  badge: Life
+  href: /tags/life/
+
+- title: Money
+  desc: Spending, budgeting, subscriptions, “why did I buy…”
+  badge: Money
+  href: /tags/money/
+
+- title: Other
+  desc: Everything else that doesn’t fit the boxes.
+  badge: Other
+  href: /tags/other/
