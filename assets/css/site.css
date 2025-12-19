@@ -207,3 +207,37 @@ a:hover{text-decoration:none}
   flex-wrap:wrap;
   font-size:13px;
 }
+
+/* --- Form styling (Trip Up submit) --- */
+form label{
+  display:block;
+  margin:14px 0;
+  color:var(--muted);
+  font-size:14px;
+  font-weight:700;
+}
+
+form input, form select, form textarea{
+  width:min(520px, 100%);
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(0,0,0,.25);
+  color:var(--text);
+  outline:none;
+}
+
+form textarea{ min-height:120px; resize:vertical; }
+
+form button{
+  padding:10px 14px;
+  border-radius:12px;
+  border:1px solid rgba(125,211,252,.25);
+  background:linear-gradient(135deg, rgba(125,211,252,.22), rgba(167,139,250,.16));
+  color:var(--text);
+  cursor:pointer;
+  font-weight:800;
+}
+
+form button:hover{ filter:brightness(1.05); }
+
