@@ -4,7 +4,7 @@ title: Parenting
 permalink: /tags/parenting/
 ---
 
-# Travel
+# Parenting
 
 {% if site.tags.parenting %}
   {% for post in site.tags.parenting %}
