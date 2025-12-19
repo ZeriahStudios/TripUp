@@ -1,0 +1,17 @@
+- tag: Travel
+  title: Travel
+  desc: Airports, hotels, itineraries, “oops I forgot…”
+  badge: Trip
+  href: /tags/travel/
+
+- tag: Parenting
+  title: Parenting
+  desc: Kid chaos, routines, “why didn’t anyone tell me?”
+  badge: Family
+  href: /tags/parenting/
+
+- tag: Work
+  title: Work
+  desc: Office pitfalls, process misses, comms mistakes.
+  badge: Office
+  href: /tags/work/
