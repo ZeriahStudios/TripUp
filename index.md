@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+permalink: /
 ---
 
 <div class="hero">
@@ -21,7 +22,6 @@ title: Home
   {% endfor %}
 </div>
 
-
 <hr>
 
 ## Featured Trip Ups
@@ -29,4 +29,3 @@ title: Home
 {% for post in site.posts limit:5 %}
 - [{{ post.title }}]({{ post.url | relative_url }}) — {{ post.date | date: "%d %b %Y" }}
 {% endfor %}
-
